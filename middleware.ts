@@ -6,9 +6,9 @@ import type { NextRequest } from "next/server";
 // blogs app host (megamind-blogs.vercel.app). When proxied through
 // engineerplaybook.io (or any other host), do not redirect so the gateway can
 // serve the content at the gateway path without causing a loop.
-export function middleware(req: NextRequest) {
-  const host = req.headers.get("host") || "";
-  const url = req.nextUrl.clone();
+export function middleware(_req: NextRequest) {
+  // const host = req.headers.get("host") || "";
+  // const url = req.nextUrl.clone();
 
   // Only consider the bare root path (no trailing slash normalization here).
   // if (url.pathname === "/") {

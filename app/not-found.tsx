@@ -10,7 +10,7 @@ export default function NotFound() {
       </h1>
       
       <p className="text-xl text-muted-foreground mb-10 max-w-[600px] mx-auto leading-relaxed">
-        Engineer Playbook doesn't have this yet, or you are lost, but you can request a feature by reaching out to maintainers directly.
+        Engineer Playbook doesn&apos;t have this yet, or you are lost, but you can request a feature by reaching out to maintainers directly.
       </p>
 
       <Link 

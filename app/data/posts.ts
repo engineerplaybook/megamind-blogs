@@ -1,6 +1,6 @@
 import { getAllPosts, PostData } from '../../lib/markdown';
 
-export interface Post extends PostData {}
+export type Post = PostData;
 
 /**
  * Returns all posts with metadata, sorted by date.

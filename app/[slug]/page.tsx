@@ -14,7 +14,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   let post;
   try {
     post = await getPostBySlug(slug);
-  } catch (e) {
+  } catch {
     notFound();
   }
 
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   let post;
   try {
     post = await getPostBySlug(slug);
-  } catch (e) {
+  } catch {
     return {
       title: 'Post Not Found'
     };
